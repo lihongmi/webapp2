@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		html,body {
+			width: 90%;
+			
+		}
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		.box {
+			width: 200px;
+			height: 200px;
+			background: green;
+			margin-top: 50px;
+			left: 20%;
+			border: 2px solid red;
+			float: left;
+		}
+		.ab_box {
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			background: green;
+			border: 2px solid black;
+		}
+		body {
+			font-size: 20px;
+			border: 2px solid black;
+			box-sizing: border-box;
+			margin: 10px;
+		}
+		.normal_box {
+			width: 200px;
+			height: 200px;
+			background: red;
+			margin-top: 50px;
+			left: 20%;
+			border: 2px solid green;
+		}
+		.bd {
+			overflow: hidden;
+			zoom: 1;
+		}
+
+		.rbox {
+			position: relative;
+			background: green;
+			margin-top: 50px;
+			left: 20%;
+			border: 2px solid red;
+		}
+		.fix_box {
+			position: fixed;
+			background: red;
+			top: 0px;
+			left: 0px;
+			bottom: 0px;
+			right: 0px;
+			/* 这么做就可以进行全屏幕自适应 */
+		}
+		.wrap {
+			width: 400px;
+			height: 400px;
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+	我是文档流
+	<!-- <div class="container">
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+	<div class="normal_box"></div> -->
+
+	<div class="rbox">
+		<div class="ab_box"></div>
+	</div>
+	<div class="wrap">
+		<div class="fix_box"></div>
+	</div>
+	
+	<!-- <span>1</span>
+	<span>2</span>
+	<span>3</span>
+	<span>4</span>
+	<span>5</span> -->
+</body>
+</html>

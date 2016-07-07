@@ -1,0 +1,18 @@
+html, body {
+	height: 100%;
+}
+body {
+	box-sizing: border-box;
+	background: #f7f7f7;
+	background-image:url(../img/gbackground.png);
+}
+.page {
+	display: block !important;
+}
+.hide {
+	display: none;
+}
+
+body section {
+	box-sizing: border-box;
+}
